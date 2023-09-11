@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+
+    <!-- Line Awsome link -->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="feedback.css" />
+
+    <script src="sendmail.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <div class="container-nav">
+        <a href="home.html" class="brand"> Sky Hawks </a>
+        <ul class="navLinks">
+          <li><a href="home.html"> Home </a></li>
+          <li><a href="../Student3/quiz.html"> Quiz </a></li>
+          <li><a href="../Student1/buyProducts.html"> Store </a></li>
+          <li><a href="../Student3/imagegallery.html"> About Us </a></li>
+          <li><a href="../Student4/gallery.html"> Gallary </a></li>
+          <li><a href="../Student4/svg.html"> Site map </a></li>
+          <li class="active"><a href="#"> Feedback </a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation Bar ends -->
+
+    <!-- Feedbac box -->
+    <div class="container">
+      <form
+        action="mailto:shakthiraveen2002@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <h3>Feedback Form</h3>
+        <label for="name"> Enter Your Name </label>
+        <input type="text" name="name" id="name" placeholder="Your Name" />
+
+        <label for="email"> Enter your e-mail </label>
+        <input type="email" name="email" id="email" placeholder="E-mail" />
+
+        <div class="rating">
+          <label for="excellent">
+            How would you rate your experience in our website?
+          </label>
+
+          <label for="excellent">Excellent</label>
+          <input
+            type="radio"
+            name="reaction"
+            value="excellent"
+            id="excellent"
+          />
+
+          <label for="good">Good</label>
+          <input type="radio" name="reaction" value="good" id="good" />
+
+          <label for="satisfactory">Satisfactory </label>
+          <input
+            type="radio"
+            name="reaction"
+            value="satisfactory"
+            id="satisfactory"
+          />
+
+          <label for="unsatisfied">Bad</label>
+          <input
+            type="radio"
+            name="reaction"
+            value="unsatisfied"
+            id="unsatisfied"
+          />
+
+          <label for="extremely_unsatisfied">Extremely Bad</label>
+          <input
+            type="radio"
+            name="reaction"
+            value="extremely_unsatisfied"
+            id="extremely_unsatisfied"
+          />
+        </div>
+
+        <label for="message"> Reason for your feedback </label>
+        <textarea
+          name="message"
+          id="message"
+          rows="4"
+          placeholder="Write your reason here..."
+        ></textarea>
+
+        <label for="mode_today"> How did you complete the task today? </label>
+        <select name="mode_today" id="mode_today">
+          <option value="method">--Please select an option--</option>
+          <option value="phone">Phone</option>
+          <option value="website">Website</option>
+          <option value="webchat">WebChat</option>
+          <option value="socialmedia">Social Media</option>
+          <option value="email">Email</option>
+        </select>
+
+        <label for="mode_next_time">
+          How would you do that task in your next visit?
+        </label>
+        <select name="mode_next_time" id="mode_next_time">
+          <option value="method">--Please select an option--</option>
+          <option value="phone">Phone</option>
+          <option value="website">Website</option>
+          <option value="webchat">WebChat</option>
+          <option value="socialmedia">Social Media</option>
+          <option value="email">Email</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <!-- Feedbac box ends -->
+
+    <!-- Footer Starts -->
+    <footer>
+      <div class="container-nav">
+        <p>
+          Copyright © 2023 Sky Hawks FC. All Rights Reserved.<br />
+          Page Editor: <a href="shakthi.html"> Shakthi Warnakulasuriya </a
+          ><br />
+          Last updated: 1st April, 2023
+        </p>
+
+        <div class="socials">
+          <a href="https://www.twitter.com"> <i class="lab la-twitter"></i> </a>
+          <a href="https://www.facebook.com">
+            <i class="lab la-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com">
+            <i class="lab la-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com">
+            <i class="lab la-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer ends -->
+
+    <!-- JS -->
+    <script src="feedback.js"></script>
+  </body>
+</html>

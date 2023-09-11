@@ -1,0 +1,61 @@
+
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Title section */
+.title {
+    background-color: #6997dd;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.title h2 {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* About section */
+.about {
+    background-color: #c1d0e6;
+    padding: 20px;
+    text-align: center;
+}
+
+.about h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Content section */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.content a {
+    display: block;
+    margin-bottom: 20px;
+    color: #6997dd;
+    text-decoration: none;
+}
+
+.content a:hover {
+    color: #3a7ada;
+}
+
+.content h3 {
+    margin-top: 40px;
+    font-size: 28px;
+}
+
+.content p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}

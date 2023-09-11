@@ -1,0 +1,219 @@
+/* Import from Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap');
+
+/* Reset, Typography and colour pallet */
+:root {
+    --c-brand: #6997dd;
+    --c-dark: #13161a;
+    --c-body: #666;
+    --c-light: #c1d0e6;
+    --f-base: "Poppins", sans-serif;
+    --n-height: 100px
+}
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--c-body);
+    font-family: var(--f-base);
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--c-dark);
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.heading-1 {
+    font-size: clamp(32px, 6vw, 54px);
+}
+
+.heading-2 {
+    font-size: clamp(28px, 4vw, 36px);
+}
+
+.heading-3 {
+    font-size: 20px;
+}
+
+a {
+    color: var(--c-dark);
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+
+a:hover {
+    color: var(--c-brand);
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    padding: 140px 0;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid var(--c-brand);
+    font-family: var(--f-base);
+    padding: 16px 34px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: var(--c-brand);
+    color: white;
+}
+
+/* Navigation bar Style starts */
+.navbar {
+    /* background-color: var(--c-dark); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--n-height);
+    display: flex;
+    z-index: 999;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    color: white;
+    font-size: 28px;
+}
+
+.navLinks {
+    display: flex;
+} 
+
+.navLinks li:not(:last-child) {
+    margin-right: 44px;
+}
+
+.navLinks li.active a {
+    box-shadow: 0 2px var(--c-brand);
+    /* color: var(--c-brand); */ 
+}
+
+.navLinks li a {
+    color: white;
+    font-size: 13px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.navLinks li a:hover {
+    color: var(--c-brand);
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger span {
+    display: block;
+    width: 34px;
+    height: 2px;
+    background-color: white;
+    margin: 8px auto;
+    transition: all 0.4s ease-in-out;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    transform: translateY(-5px) rotate(-45deg);
+}
+
+.scrolled {
+    background-color: white;
+}
+
+.scrolled .brand {
+    color: var(--c-dark);
+}
+
+.scrolled .navLinks li a {
+    color: var(--c-dark);
+}
+
+.scrolled .navLinks li a:hover {
+    color: var(--c-brand);
+}
+
+.scrolled .hamburger span {
+    background-color: var(--c-dark);
+}
+
+@media (max-width: 740px) {
+    .navLinks {
+        position: fixed;
+        top: var(--n-height);
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        padding: 0 24px;
+        transition: all 0.4s ease-in-out;
+        height: 0;
+        overflow: hidden;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .navLinks li a {
+        color: var(--c-dark);
+    }
+
+    .navLinks.active {
+        height: 250px; /* 170px */
+    }
+
+    .navLinks li {
+        padding: 6px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+/* Navigation bar Style ends */

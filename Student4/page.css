@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #7ab2d7;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+.topic h1{
+    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align:center ;
+    color: #195e8c;
+    background: #f8f9fa;;
+}
+.club h3 span{
+    color: #826b19;;
+}
+
+
+.club  h3 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: var(--dark);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding: 20px;
+    
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.information{
+    padding: 25px;
+    font-family: 'poppins';
+    font-size: 15px;
+}
+
+.information h5{
+    color: #6a3169;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}   

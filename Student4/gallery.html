@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="icon" href="images/Logo.png" />
+  </head>
+  <body>
+    <script src="gallery.js"></script>
+    <div class="color-boxes">
+      <input type="button" class="color-box black" onclick="black()" />
+      <input type="button" class="color-box white" onclick="white()" />
+      <input type="button" class="color-box blue" onclick="blue()" />
+    </div>
+
+    <div class="font-size-buttons">
+      <button onclick="changeFontSize('small')">Small</button>
+      <button onclick="changeFontSize('medium')">Medium</button>
+      <button onclick="changeFontSize('large')">Large</button>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <div class="container">
+        <a href="#" class="brand"> Sky Hawks </a>
+        <ul class="navLinks">
+          <li><a href="../Student2/home.html"> Home </a></li>
+          <li><a href="../Student3/quiz.html"> Quiz </a></li>
+          <li><a href="../Student1/buyProducts.html"> Store </a></li>
+          <li><a href="../Student3/imagegallery.html"> About Us </a></li>
+          <li class="active"><a href="gallery.html"> Gallery </a></li>
+          <li><a href="svg.html"> Site map </a></li>
+          <li><a href="../Student2/feedback.html"> Feedback </a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation Bar ends -->
+
+    <div class="full-img" id="fullImgBox">
+      <img src="images/image3.jpg" id="fullImg" />
+      <p class="line1" id="lineg1">
+        Football, also known as soccer, is a team sport played by two teams of
+        eleven players each, using a round ball. It is the most popular sport in
+        the world, with an estimated 4 billion fans worldwide. The origins of
+        football can be traced back to ancient China, where a game called Cuju
+        was played. However, the modern form of football originated in England
+        in the mid-19th century and quickly spread throughout the world. Today,
+        football is played at both amateur and professional levels, with
+        numerous international and domestic competitions. Overall, football has
+        become a cultural phenomenon and a unifying force for people of all
+        ages, genders, and backgrounds. Its popularity shows no signs of slowing
+        down, and it is expected to remain the world's most popular sport for
+        the foreseeable future.
+      </p>
+      <p class="line2" id="lineg2">
+        Cristiano Ronaldo is widely regarded as one of the greatest football
+        players of all time, thanks to his exceptional performance both on and
+        off the field. Here are some highlights of his career:Ronaldo has scored
+        more than 700 goals in his career, making him one of the all-time top
+        scorers in the sport's history,He has won numerous individual awards,
+        including five Ballon d'Or awards, which are given to the best player in
+        the world each year,Ronaldo is known for his exceptional physical
+        attributes, including his speed, agility, and strength. He is also a
+        prolific scorer of free kicks, having scored over 60 goals from direct
+        free kicks in his career and Off the field, Ronaldo is known for his
+        philanthropic work, including his support for various charities and his
+        donations to disaster relief efforts. He has also been involved in
+        various business ventures and has become one of the most recognizable
+        and marketable athletes in the world.
+      </p>
+      <p class="line3" id="lineg3">
+        Lionel Messi is considered one of the greatest football players of all
+        time, and he has had an incredible career with numerous remarkable
+        performances. Here are some of his notable achievements and
+        performances: Messi has won the Ballon d'Or award (given to the world's
+        best player) seven times, which is the most in history, He has won the
+        Golden Shoe award (given to the top scorer in Europe's top leagues) a
+        record six times, Overall, Messi's performances throughout his career
+        have been consistently impressive, and he has broken numerous records
+        and won numerous individual and team awards.
+      </p>
+      <p class="line4" id="lineg4">
+        Faiq Bolkiah is a professional football player from Brunei who currently
+        plays as a forward for Maritimo in the Primeira Liga, the top football
+        league in Portugal. He was educated in Great Britain at Bradfield
+        College. Bolkiah has been described as "the richest footballer in the
+        world", with an estimated net worth of US$20 billion. His dad Jefri is
+        the brother of oil tycoon Hassanal, making Faiq a member of Brunei's
+        royal family and one of the heirs to the sultan's fortune. Faiq Bolkiah
+        is known for his speed, dribbling skills, and ability to score goals
+        from long range.
+      </p>
+      <p class="line5" id="lineg5">
+        The FIFA World Cup is widely regarded as the most prestigious and
+        important football tournament in the world, and is watched by millions
+        of people globally. Here are a few reasons why the World Cup is
+        considered so important: Global significance: The World Cup is a truly
+        global event, with teams from every continent competing against each
+        other. It is a platform for nations to showcase their talent and skills
+        on an international level, and it has the power to unite people from
+        different countries and cultures. Economic impact: The World Cup is a
+        major economic event, with countries investing heavily in infrastructure
+        and tourism to host the tournament. Sporting legacy: The World Cup has a
+        lasting impact on the sport of football, inspiring young players and
+        promoting the development of the sport in countries around the world.
+        The tournament has a rich history of iconic moments and legendary
+        players, and winning the World Cup is often considered the ultimate
+        achievement for a national football team.
+      </p>
+      <p class="line6" id="lineg6">
+        The field is typically made of natural or artificial grass and measures
+        100-130 yards in length and 50-100 yards in width, depending on the
+        level of play. The field is divided into two halves by a halfway line,
+        and each half is further divided into two quarters by the center circle.
+        The goals are located at either end of the field and consist of two
+        vertical posts with a crossbar connecting them. The distance between the
+        posts is 8 yards, and the height of the crossbar is 8 feet. The goal
+        line is the line that runs along the width of the field at each end and
+        marks the location of the goal. The penalty area is a rectangular area
+        in front of each goal, and fouls committed inside the penalty area can
+        result in a penalty kick. The corner arc is a small curved line at each
+        corner of the field, where corner kicks are taken.
+      </p>
+      <span class="close" onclick="closeFullImg()">X</span>
+    </div>
+
+    <div class="img-gallery">
+      <img src="images/image3.jpg" onclick="openFullImg(this.src,'lineg1')" />
+      <img src="images/image1.jpg" onclick="openFullImg(this.src,'lineg2')" />
+      <img src="images/image5.jpg" onclick="openFullImg(this.src,'lineg3')" />
+      <img src="images/image2.jpg" onclick="openFullImg(this.src,'lineg4')" />
+      <img src="images/image4.jpg" onclick="openFullImg(this.src,'lineg5')" />
+      <img src="images/image6.jpg" onclick="openFullImg(this.src,'lineg6')" />
+    </div>
+
+    <script>
+      var fullImgBox = document.getElementById("fullImgBox");
+      var fullImg = document.getElementById("fullImg");
+      var li1 = document.getElementById("lineg1");
+      var li2 = document.getElementById("lineg2");
+      var li3 = document.getElementById("lineg3");
+      var li4 = document.getElementById("lineg4");
+      var li5 = document.getElementById("lineg5");
+      var li6 = document.getElementById("lineg6");
+      function openFullImg(pic, x) {
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+        if (x === "lineg1") {
+          li1.style.display = "flex";
+          li2.style.display = "none";
+          li3.style.display = "none";
+          li4.style.display = "none";
+          li5.style.display = "none";
+          li6.style.display = "none";
+        }
+        if (x === "lineg2") {
+          li1.style.display = "none";
+          li2.style.display = "flex";
+          li3.style.display = "none";
+          li4.style.display = "none";
+          li5.style.display = "none";
+          li6.style.display = "none";
+        }
+        if (x === "lineg3") {
+          li1.style.display = "none";
+          li2.style.display = "none";
+          li3.style.display = "flex";
+          li4.style.display = "none";
+          li5.style.display = "none";
+          li6.style.display = "none";
+        }
+        if (x === "lineg4") {
+          li1.style.display = "none";
+          li2.style.display = "none";
+          li3.style.display = "none";
+          li4.style.display = "flex";
+          li5.style.display = "none";
+          li6.style.display = "none";
+        }
+        if (x === "lineg5") {
+          li1.style.display = "none";
+          li2.style.display = "none";
+          li3.style.display = "none";
+          li4.style.display = "none";
+          li5.style.display = "flex";
+          li6.style.display = "none";
+        }
+        if (x === "lineg6") {
+          li1.style.display = "none";
+          li2.style.display = "none";
+          li3.style.display = "none";
+          li4.style.display = "none";
+          li5.style.display = "none";
+          li6.style.display = "flex";
+        }
+      }
+      function closeFullImg() {
+        fullImgBox.style.display = "none";
+      }
+    </script>
+
+    <!-- Footer Section Starts -->
+    <footer>
+      <div class="container">
+        <p>
+          Copyright © 2023 Sky Hawks FC. All Rights Reserved.<br />
+          Page Editor: <a href="Nilesh.html"> Nilesh Appuhamy </a><br />
+          Last updated: 4th April, 2023
+        </p>
+      </div>
+    </footer>
+
+    <!-- Footer ends -->
+
+    <script src="navbar.js"></script>
+  </body>
+</html>

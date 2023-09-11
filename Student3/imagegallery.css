@@ -1,0 +1,33 @@
+body {
+			background-color:#e8f0f7;
+		}
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+		.member {
+			margin: 10px;
+			border: 1px solid black;
+			padding: 60px;
+			text-align: center;
+			width: 150px;
+			height: 200px;
+			transition: transform 0.5s;
+		}
+		.member:hover {
+			transform: scale(1.1);
+			cursor: pointer;
+		}
+		.details {
+			display: none;
+			text-align: center;
+			margin-top: 40px;
+			font-weight: bold;
+		}
+		.member:hover .details {
+			display: block;
+		}
+		
+	

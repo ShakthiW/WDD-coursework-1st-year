@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.svgJS g:hover line {
+	fill: none;
+	stroke-width: 2;
+	stroke: rgb(56, 53, 53);
+}
+
+.svgJS g:hover g text,
+ text {
+	font-weight: bold;
+    cursor: pointer;
+}
+
+.svgJS g:hover polygon,
+#svgJS g:hover rect,
+#svgJS g:focus polygon,
+#svgJS g:focus rect {
+	fill:#a0c4f5;
+	stroke: rgb(56, 53, 53);
+	stroke-width: 2.5;		
+}
+
+.sitemap {
+	background-image: url('images/field.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	height: 100vh;
+}
+
+
+			
+
+		
