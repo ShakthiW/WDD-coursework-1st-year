@@ -10,6 +10,6 @@ This is a sports club website called skyhawks.
 ## Other Members
 
  - [Student 01 - Abdul](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Student 02 - Me](https://github.com/matiassingers/awesome-readme)
+ - [Student 02 - Me]([https://github.com/ShakthiW](https://github.com/ShakthiW))
  - [HStudent 03 - Lithila](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
  - [HStudent 04 - Nilesh](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
